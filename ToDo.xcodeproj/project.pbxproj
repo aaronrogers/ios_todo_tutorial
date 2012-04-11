@@ -15,6 +15,7 @@
 		93F49CBF1535FD7700616108 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F49CBE1535FD7700616108 /* AppDelegate.m */; };
 		93F49CC21535FD7700616108 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F49CC01535FD7700616108 /* MainStoryboard.storyboard */; };
 		93F49CCD1535FE7B00616108 /* ItemsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F49CCC1535FE7B00616108 /* ItemsController.m */; };
+		93F49CD01536012800616108 /* NewItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F49CCF1536012800616108 /* NewItemController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		93F49CC11535FD7700616108 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		93F49CCB1535FE7B00616108 /* ItemsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsController.h; sourceTree = "<group>"; };
 		93F49CCC1535FE7B00616108 /* ItemsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsController.m; sourceTree = "<group>"; };
+		93F49CCE1536012800616108 /* NewItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewItemController.h; sourceTree = "<group>"; };
+		93F49CCF1536012800616108 /* NewItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewItemController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				93F49CB51535FD7700616108 /* Supporting Files */,
 				93F49CCB1535FE7B00616108 /* ItemsController.h */,
 				93F49CCC1535FE7B00616108 /* ItemsController.m */,
+				93F49CCE1536012800616108 /* NewItemController.h */,
+				93F49CCF1536012800616108 /* NewItemController.m */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				93F49CBB1535FD7700616108 /* main.m in Sources */,
 				93F49CBF1535FD7700616108 /* AppDelegate.m in Sources */,
 				93F49CCD1535FE7B00616108 /* ItemsController.m in Sources */,
+				93F49CD01536012800616108 /* NewItemController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewItemController.h"
 
-@interface ItemsController : UITableViewController
+@interface ItemsController : UITableViewController<NewItemControllerDelegate>
 
 @end

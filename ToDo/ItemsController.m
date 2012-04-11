@@ -126,4 +126,29 @@
      */
 }
 
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"NewItem"]) {
+        NewItemController *newItemController = segue.destinationViewController;
+        newItemController.delegate = self;
+    }
+}
+
+#pragma mark - NewItemControllerDelegate
+
+- (void)newItemController:(NewItemController *)controller didAddItem:(NSString *)item
+{
+    [items addObject:item];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.tableView reloadData];
+    }];
+}
+
+- (void)newItemControllerDidCancel:(NewItemController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
