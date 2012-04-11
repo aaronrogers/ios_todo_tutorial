@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemsController.h
 //  ToDo
 //
 //  Created by Aaron Rogers on 4/11/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ItemsController : UITableViewController
 
 @end
