@@ -143,7 +143,8 @@
 {
     [items addObject:item];
     [self dismissViewControllerAnimated:YES completion:^{
-        [self.tableView reloadData];
+        NSIndexPath *insertLocation = [NSIndexPath indexPathForRow:items.count - 1 inSection:0];
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:insertLocation] withRowAnimation:UITableViewRowAnimationFade];
     }];
 }
 
