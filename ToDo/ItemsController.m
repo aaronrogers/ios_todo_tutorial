@@ -131,7 +131,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NewItem"]) {
-        NewItemController *newItemController = segue.destinationViewController;
+        UINavigationController *navController = segue.destinationViewController;
+        NewItemController *newItemController = [navController.viewControllers objectAtIndex:0];
         newItemController.delegate = self;
     }
 }
